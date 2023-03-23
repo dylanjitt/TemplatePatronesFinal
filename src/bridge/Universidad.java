@@ -50,13 +50,15 @@ public class Universidad implements IsystemInscription {
 	public void add(String s) {
 		if (!(estudiantes.size()>capacidad)) {
 			estudiantes.add(s);
+		}else {
+			System.out.println("NO SE PUEDE INSCRIBIR AL ESTUDIANTE, UNIVERSIDAD A MAXIMA CAPACIDAD");
 		}
 		
 	}
 
 	@Override
 	public void info() {
-		System.out.println("COLEGIO: "+nombre);
+		System.out.println("UNIVERSIDAD: "+nombre);
 		System.out.println("Capacidad: "+capacidad+" estudiantes");
 		for (String s:estudiantes) {
 			System.out.println("> "+s);

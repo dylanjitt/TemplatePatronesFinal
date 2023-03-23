@@ -50,6 +50,8 @@ public class Escuela implements IsystemInscription {
 	public void add(String s) {
 		if (!(estudiantes.size()>capacidad)) {
 			estudiantes.add(s);
+		}else {
+			System.out.println("NO SE PUEDE INSCRIBIR AL ESTUDIANTE, ESCUELA"+nombre+" A MAXIMA CAPACIDAD");
 		}
 		
 	}

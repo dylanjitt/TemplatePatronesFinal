@@ -69,6 +69,7 @@ public class Phone implements Iphone {
 		System.out.println("SIM slots: "+nroChips);
 		System.out.println("Build Version: "+buildVersion);
 		System.out.println("PRICE: "+precio+"$");
+		System.out.println("\n");
 		
 	}
 	@Override

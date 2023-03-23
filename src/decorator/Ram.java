@@ -3,30 +3,23 @@ package decorator;
 public class Ram extends Funcionalities{
 	
 	private int ram;
-	private String marca;
-	private int costo;
+	
 
-
-
-
-	public Ram(Iphone cel, int ram, String marca, int costo) {
-		super(cel);
+	public Ram(Iphone cel, String marca, int costo, int ram) {
+		super(cel, marca, costo);
 		this.ram = ram;
-		this.marca = marca;
-		this.costo = costo;
 	}
-
 
 
 
 	@Override
 	public void info() {
-		super.info();
-		System.out.println("Se añadio "+ram+" GB de RAM marca "+marca+"a su celular");
+		
+		System.out.println("Se añadio "+ram+" GB de RAM marca "+super.getMarca()+" a su celular");
 		super.addRAM(ram);
-		super.addPrice(costo);
+		super.addPrice(super.getCosto());
 		super.info();
-		System.out.println(" ");
+		//System.out.println("\n");
 			
 	}
 

@@ -3,7 +3,8 @@ package decorator;
 public class Funcionalities implements Iphone{
 	
 	private Iphone cel;
-
+	private String marca;
+	private int costo;
 
 	public Iphone getCel() {
 		return cel;
@@ -14,11 +15,31 @@ public class Funcionalities implements Iphone{
 		this.cel = cel;
 	}
 
-
-
-	public Funcionalities(Iphone cel) {
+	public Funcionalities(Iphone cel, String marca, int costo) {
 		super();
 		this.cel = cel;
+		this.marca = marca;
+		this.costo = costo;
+	}
+
+
+	public String getMarca() {
+		return marca;
+	}
+
+
+	public void setMarca(String marca) {
+		this.marca = marca;
+	}
+
+
+	public int getCosto() {
+		return costo;
+	}
+
+
+	public void setCosto(int costo) {
+		this.costo = costo;
 	}
 
 
